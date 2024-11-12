@@ -1,21 +1,38 @@
 /* Write your CSS here */
-.todos-item-container {
+
+.todo-item {
+  list-style-type: none;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-right: 30px;
+  background-color: antiquewhite;
+  margin: 10px;
+  border-radius: 10px;
 }
-
-.todos-item-title {
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-.todos-item-delete-button {
+/* .inner-container {
+  background-color: white;
+} */
+.delete-btn {
+  background-color: white;
   color: #ff0b37;
-  background-color: #ffffff;
-  border: 1px solid #ff0b37;
-  font-family: 'Roboto';
-  border-radius: 8px;
-  height: 28px;
-  width: 60px;
+  border: 2px solid #ff0b37;
+  padding: 10px 15px;
+  margin-bottom: 5px;
 }
+.title {
+  color: #000000;
+  font-size: 10px;
+  font-family: 'Roboto';
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  .delete-btn {
+    font-size: 18px;
+    padding: 8px 16px 8px 16px;
+    margin-left: 32px;
+  }
+}
+

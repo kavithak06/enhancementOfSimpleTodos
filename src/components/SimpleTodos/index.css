@@ -1,33 +1,51 @@
 /* Write your CSS here */
 
-.app-bg-container {
+.container {
   background-color: #ffc2a0;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  min-height: 100vh;
 }
-
-.app-card-container {
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 9px;
-  width: 90%;
+.inner-container {
+  background-color: white;
+  margin: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-family: 'Roboto';
+  width: 98%;
+  border-radius: 20px;
 }
-
-.todos-head {
+@media screen and (min-width: 768px) {
+  .inner-container {
+    padding: 48px;
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+}
+.heading {
+  font-size: 30px;
   font-family: 'Roboto';
-  font-size: 28px;
-  font-weight: bold;
   color: #ff8542;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 48px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+}
+.todos-list {
+  padding-left: 0px;
 }
 
-.todos-items-container {
-  list-style-type: none;
-  padding: 0;
+.add-todo {
+  display: flex;
+  justify-content: space-between;
 }
